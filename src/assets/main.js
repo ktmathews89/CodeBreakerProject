@@ -8,6 +8,15 @@ function guess() {
 
 //implement new functions here
 function setHiddenFields () {
-    answer = Math.floor(Math.random() * (9999 - 0 + 1));
-    return answer;
+    attempt = 0;
+    var random = Math.random();
+
+    var random2 = random * (9999 - 0);
+
+    var number = Math.floor(random2);
+
+    answer = number.toString();
+    while (answer.length < 4){
+        answer = '0' + answer;
+    }
 }
