@@ -10,16 +10,17 @@ function guess() {
 function setHiddenFields () {
     attempt = 0;
 
-    let answer = Math.floor(Math.random() * 1000);
-    console.log(answer);
+    let number = Math.floor(Math.random() * 1000);
+    console.log(number);
 
-    // var random = Math.random();
-    // var random2 = random * (9999 - 0);
-    // var number = Math.floor(random2);
+    // let random = Math.random();
+    // let random2 = random * (9999 - 0);
+    // let number = Math.floor(random2);
 
-    answer = answer.toString();
+    answer = number.toString();
 
     while (answer.length < 4) {
         answer = '0' + answer;
     }
+    console.log(answer);
 }
